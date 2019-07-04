@@ -1,2 +1,2 @@
 # TL;DR
-An event extraction and summarization system. 
+An end-to-end event extraction and summarization system. 
