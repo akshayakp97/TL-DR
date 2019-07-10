@@ -1,4 +1,6 @@
-TL;DR - An end-to-end event extraction and summarization system.
+
+# TL;DR
+An end-to-end event extraction and summarization system. 
 
 News event Extraction and Classification -
 
