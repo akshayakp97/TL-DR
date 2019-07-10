@@ -1,0 +1,98 @@
+# This is a HJSON-File, so comments and so on can be used! See https://hjson.org/
+# Furthermore this is first of all the actual config file, but as default just filled with examples.
+{
+  # Every URL has to be in an array-object in "base_urls".
+  # The same URL in combination with the same crawler may only appear once in this array.
+   "base_urls" : [
+    {
+      # Start crawling from faz.net
+      "url": "https://www.thejakartapost.com/",
+
+      # Because this site is weirt, use the
+      # meta_contains_article_keyword-heuristic and disable all others because
+      # overwrite will merge the defaults from "newscrawler.cfg" with
+      # this
+      "overwrite_heuristics": {
+        "meta_contains_article_keyword": true,
+        "og_type": false,
+        "linked_headlines": false,
+        "self_linked_headlines": false
+      },
+      # Also state that in the condition, all heuristics used in the condition
+      # have to be activated in "overwrite_heuristics" (or default) as well.
+      "pass_heuristics_condition": "meta_contains_article_keyword"
+    },
+{
+      # Start crawling from faz.net
+      "url": "https://www.bbc.com/news/topics/cmj34zmw7vmt/indonesia",
+
+      # Because this site is weirt, use the
+      # meta_contains_article_keyword-heuristic and disable all others because
+      # overwrite will merge the defaults from "newscrawler.cfg" with
+      # this
+      "overwrite_heuristics": {
+        "meta_contains_article_keyword": true,
+        "og_type": false,
+        "linked_headlines": false,
+        "self_linked_headlines": false
+      },
+      # Also state that in the condition, all heuristics used in the condition
+      # have to be activated in "overwrite_heuristics" (or default) as well.
+      "pass_heuristics_condition": "meta_contains_article_keyword"
+   },
+{
+      # Start crawling from faz.net
+      "url": "https://en.antaranews.com/",
+
+      # Because this site is weirt, use the
+      # meta_contains_article_keyword-heuristic and disable all others because
+      # overwrite will merge the defaults from "newscrawler.cfg" with
+      # this
+      "overwrite_heuristics": {
+        "meta_contains_article_keyword": true,
+        "og_type": false,
+        "linked_headlines": false,
+        "self_linked_headlines": false
+      },
+      # Also state that in the condition, all heuristics used in the condition
+      # have to be activated in "overwrite_heuristics" (or default) as well.
+      "pass_heuristics_condition": "meta_contains_article_keyword"
+},
+{
+      # Start crawling from faz.net
+      "url": "https://jakartaglobe.id/",
+
+      # Because this site is weirt, use the
+      # meta_contains_article_keyword-heuristic and disable all others because
+      # overwrite will merge the defaults from "newscrawler.cfg" with
+      # this
+      "overwrite_heuristics": {
+        "meta_contains_article_keyword": true,
+        "og_type": false,
+        "linked_headlines": false,
+        "self_linked_headlines": false
+      },
+      # Also state that in the condition, all heuristics used in the condition
+      # have to be activated in "overwrite_heuristics" (or default) as well.
+      "pass_heuristics_condition": "meta_contains_article_keyword"
+},
+{
+      # Start crawling from faz.net
+      "url": "http://www.thebalitimes.com/",
+
+      # Because this site is weirt, use the
+      # meta_contains_article_keyword-heuristic and disable all others because
+      # overwrite will merge the defaults from "newscrawler.cfg" with
+      # this
+      "overwrite_heuristics": {
+        "meta_contains_article_keyword": true,
+        "og_type": false,
+        "linked_headlines": false,
+        "self_linked_headlines": false
+      },
+      # Also state that in the condition, all heuristics used in the condition
+      # have to be activated in "overwrite_heuristics" (or default) as well.
+      "pass_heuristics_condition": "meta_contains_article_keyword"
+}
+  ]
+}

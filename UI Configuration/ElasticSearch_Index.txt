@@ -1,0 +1,31 @@
+PUT cse_635
+{
+
+"mappings": {
+    "_doc": {
+  "properties": {
+					
+					"Event_Date": {
+					  "format": "dd/MM/yy",
+						"type": "date"
+					},
+					"Event_Type": {
+						"type": "keyword"
+					},
+					"Person_List": {
+						"type": "keyword"
+					},
+					"Org_List": {
+						"type": "keyword"
+					},
+					"Location_List": {
+						"type": "keyword"
+					},
+					"Summary": {
+						"type": "text"
+					}
+					"Location": {
+						"type": "geo_point"
+					}
+				}	
+  }
