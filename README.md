@@ -4,6 +4,8 @@ An end-to-end event extraction and summarization system.
 
 News event Extraction and Classification -
 
+For detailed report: TLDR_ACM_REPORT
+
 The following scripts are run in the same order as below:
 
 1. Classifier_Builder.ipynb - Jupyter notebook for building classifier for KNN, Naive Bayes and Logistic regression
